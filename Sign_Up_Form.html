@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>loginForm</title>
+    <style>
+        *{
+            font-family:'Courier New', Courier, monospace;
+            box-sizing: border-box;
+            color:rgb(196, 196, 196);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: rgb(1, 1, 38);
+        }
+        
+        form{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loginForm{
+          width: 350px;
+          border-radius: 10px;
+          border: 2px solid rgb(8, 8, 109);
+          padding:20px 20px;
+          height: 450px;
+        }
+
+        legend{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .formInput{
+            padding: 10px;
+            margin:10px 5px;
+            
+        }
+
+        .formInput label{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input{
+            display: block;
+            width: 100%;
+            padding:10px;
+            border-radius: 10px;
+            outline: none;
+            border:1px solid rgb(196, 196, 196);
+            color: black;
+        }
+
+        button{
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            border:1px solid rgb(9, 81, 87);
+            width: 40%;
+            margin-left: 100px;
+            cursor: pointer;
+            color: black;
+            transition: all 0.5s ease;
+        }
+        button:hover{
+            background-color: rgb(9, 81, 87);
+            color: #fff;
+        }
+
+        .text-light{
+            color: #fff;
+        }
+        .checkBoxInput{
+            display: inline-block;
+        }
+        span{
+            font-size: 15px;
+            color: black;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .fa-lock-open {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+       <fieldset class="loginForm">
+        <legend>
+            <i class="fas fa-unlock-alt  fa-fw"></i>
+            Contact me
+        </legend>
+
+        <div class="formInput">
+    <label class="text-light" >
+        <i class="fas fa-user text-light fa-fw"></i>User Name
+    </label>
+    <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="formInput">
+            <label class="text-light">
+                <i class="fas fa-message text-light fa-fw"></i> Email
+            </label>
+            <input type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="formInput">
+                    <label class="text-light">
+                        <i class="fas fa-message text-light fa-fw"></i> Message
+                    </label>
+                   <input type="text">
+                        </div>
+                      
+        <button class="btn-light">
+<span>Send</span>
+        </button>    
+    </form>
+       </fieldset>
+</body>
+</html>
